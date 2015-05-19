@@ -141,20 +141,20 @@ function onLoad() {
 		var flexShrink = itemStyle.flexShrink || style.flexShrink || defaultStyle.flexShrink;
 		var flexBasis = itemStyle.flexBasis || style.flexBasis || defaultStyle.flexBasis;
 		var align = itemStyle.alignSelf;
-        var num;
+		var num;
 
 		// Convert colors to hex values
 		color = rgbToHex(color);
 		bgColor = rgbToHex(bgColor);
         
-       // Set all items to default border for clearing previous highlighted item.
-		// for (var i=0; i<items.length; i++) {
-            // num = items[i].number;
-            // findCSSRule(itemRuleSelector + num+ ")").style.borderColor = "gray";
-		// }
-        
-         // Highlight the selected item
-        // itemStyle.borderColor = "gold"; 
+		// Set all items to default border for clearing previous highlighted item.
+		for (var i=0; i<items.length; i++) {
+			num = items[i].number;
+			findCSSRule(itemRuleSelector + num+ ")").style.borderColor = "gray";
+		}
+		
+		// Highlight the selected item
+		itemStyle.borderColor = "gold"; 
 
 		itemNumber.innerHTML = number;
 		itemColor.value = color;
@@ -357,6 +357,6 @@ function onLoad() {
 
 	// Set initial item properties
 	items[0].click();
-    // findCSSRule(itemRuleSelector + items[0].number + ")").style.borderColor = "gray";
+	findCSSRule(itemRuleSelector + items[0].number + ")").style.borderColor = "gray";
 	itemNumber.blur();
 }
