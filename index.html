@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex Box</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/flex.css">
+	<script src="js/flex.js"></script>
+</head>
+<body>
+	<section>
+		<h1>Flex Box Playground</h1>
+		No floats, padding, margins, classes, ids, data-attributes, text-align, positioning, inline style setting, framework or jQuery, just as a demonstration. 
+		The entire body is flexed.
+
+		<hr>
+
+		<p>
+			<label><input type="checkbox" name="flexItems" value="1 1 20%" checked> Flex Default</label>
+		</p>
+
+		<p>
+			<label><input name="numberItems" type="number" value="6" min="0" max="84"> Items</label>
+		</p>
+
+		<p>
+			width <input name="itemsWidth" type="text" value="100px" disabled>
+			height <input name="itemsHeight" type="text" value="100px" disabled>
+			<button>Change</button>
+		</p>
+
+		<hr>
+
+		<h2>Set Flex Region</h2>
+		<p>
+			<label>Direction:</label>
+			<input type="radio" name="flexDirection" value="row" checked> row
+			<input type="radio" name="flexDirection" value="row-reverse"> row-reverse
+			<input type="radio" name="flexDirection" value="column"> column
+			<input type="radio" name="flexDirection" value="column-reverse"> column-reverse
+		</p>
+
+		<p>
+			<label>Wrap:</label>
+			<input type="radio" name="flexWrap" value="wrap" checked> wrap
+			<input type="radio" name="flexWrap" value="wrap-reverse"> wrap-reverse
+			<input type="radio" name="flexWrap" value="nowrap"> nowrap
+		</p>
+
+		<p>
+			<label>Justify Content:</label>
+			<input type="radio" name="justifyContent" value="flex-start"> flex-start
+			<input type="radio" name="justifyContent" value="flex-end"> flex-end
+			<input type="radio" name="justifyContent" value="center"> center
+			<input type="radio" name="justifyContent" value="space-between"> space-between
+			<input type="radio" name="justifyContent" value="space-around"> space-around
+		</p>
+
+		<p>
+			<label>Align Items:</label>
+			<input type="radio" name="alignItems" value="flex-start"> flex-start
+			<input type="radio" name="alignItems" value="flex-end"> flex-end
+			<input type="radio" name="alignItems" value="center"> center
+			<input type="radio" name="alignItems" value="baseline"> baseline
+			<input type="radio" name="alignItems" value="stretch"> stretch
+		</p>
+
+		<p>
+			<label>Align Content:</label>
+			<input type="radio" name="alignContent" value="flex-start"> flex-start
+			<input type="radio" name="alignContent" value="flex-end"> flex-end
+			<input type="radio" name="alignContent" value="space-between"> space-between
+			<input type="radio" name="alignContent" value=">space-around"> space-around
+			<input type="radio" name="alignContent" value="stretch"> stretch
+		</p>
+
+		<p>
+			<label>Dimensions:</label>
+			width <input name="mainWidth" type="text" value="55vw">
+			height <input name="mainHeight" type="text" value="85vh">
+			<button>Change</button>
+		</p>
+
+		<hr>
+
+		<h2>Set Individual Item</h2>
+
+		<p>
+			<label>Item #:</label>
+			<number tabindex="-1">1</number>
+		</p>
+
+		<p>
+			<label>Color:</label>
+			<input name="color" type="color">
+		</p>
+
+		<p>
+			<label>BG Color:</label>
+			<input name="backgroundColor" type="color">
+		</p>
+
+		<p>
+			<label>Order:</label>
+			<input name="order" type="number"  min="-100" max="100">
+			<button>Change</button>
+		</p>
+
+		<p>
+			<label>Flex Grow:</label>
+			<input name="flexGrow" type="text">
+			<button>Change</button>
+		</p>
+
+		<p>
+			<label>Flex Shrink:</label>
+			<input name="flexShrink" type="text">
+			<button>Change</button>
+		</p>
+
+		<p>
+			<label>Flex Basis:</label>
+			<input name="flexBasis" type="text">
+			<button>Change</button>
+		</p>
+
+		<p>
+			<label>Width:</label>
+			<input name="width" type="text">
+			<button>Change</button>
+		</p>
+
+		<p>
+			<label>Height:</label>
+			<input name="height" type="text">
+			<button>Change</button>
+		</p>
+
+		<p>
+			<label>Align Self:</label>
+			<select name="alignSelf">
+				<option value="">-- Select --</option>
+				<option value="auto">auto</option>
+				<option value="flex-start">flex-start</option>
+				<option value="flex-end">flex-end</option>
+				<option value="center">center</option>
+				<option value="baseline">baseline</option>
+				<option value="stretch">stretch</option>
+			</select>
+		</p>
+
+		<p>
+			<label>BG Image:</label>
+			<select name="backgroundImage">
+				<option value="">-- Select Image --</option>
+				<option value="devil-duck.jpg">Devil Duck</option>
+				<option value="cool-cat.png">Cool Cat</option>
+				<option value="city.png">City</option>
+				<option value="Durant.png">Durant</option>
+				<option value="interstellar.jpg">Interstellar</option>
+				<option value="galaxy.png">Galaxy</option>
+				<option value="robot.png">Robot</option>
+				<option value="robot-girafe.gif">Robot Giraffe</option>
+				<option value="goat.gif">Goat</option>
+				<option value="animated-goat.gif">Goat 2</option>
+				<option value="cobra.png">Snake</option>
+				<option value="skyscraper.png">Snake</option>
+				
+			</select>
+		</p>
+
+		<p>
+			<label>Video:</label>
+			<select name="video">
+				<option value="">-- Select Video --</option>
+				<option value="Acrostic Sentence.mp4">Acrostic Sentence</option>
+				<option value="Exit Slip.mp4">Exit Slip</option>
+				<option value="I Do We Do You Do.mp4">I Do We Do You Do</option>
+				<option value="KWL.mp4">KWL</option>
+				<option value="Quick Write.mp4">Quick Write</option>
+				<option value="Venn Diagram.mp4">Venn Diagram</option>
+			</select>
+		</p>
+
+		<p>
+			<label>Content:</label>
+			<br><textarea></textarea>
+			<button>Change</button>
+		</p>
+	</section>
+
+	<section>
+		<h2>Target Flex Region</h2>
+		<h4>Click to see an item's properties.</h4>
+		<main></main>
+	</section>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Don't need no stinking margins or padding */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	font-family: Georgia;
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+h4 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+h1, h2, h3, label {
+	color: #4A4545;
+}
+
+body, section {
+	height: 98vh;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* Override for first section */
+section:nth-child(1) {
+	width: 40vw;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+  	h1, h2, h3, h4, hr {
+		width: 100%;
+	}
+
+	p {
+
+	}
+
+	label {
+		min-width: 160px;
+		display: inline-block;
+		font-weight: bold;
+	}
+
+	number {
+		width: 20px;
+		display: inline-block;
+		font-size: 1.2em;
+		font-family: Arial;
+		font-weight: bold;
+		color: red;
+	}
+
+
+	input[type='text'], input[type='number'], textarea {
+		font-weight: bold;
+		color: darkred;
+	}
+
+	input[type='text'] {
+		width: 40px;
+	}
+
+	input[type='number'] {
+		width: 40px;
+		font-size: 0.9em;
+	}
+
+	textarea {
+		width: 250px;
+		display: flex;
+	}
+
+
+main {
+	width: 50vw;
+	height: 85vh;
+	border: 3px dashed red;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+	/* Style Items */
+	main div {
+		width: initial;
+		height: initial;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 20%;
+
+		color: #FFF;
+		cursor: pointer;
+		font-family: Arial;
+		font-size: 30px;
+		font-weight: bold;
+		background-color: #8acf8a;
+		border: 1px solid gray;
+
+		overflow: hidden;
+		background-repeat: none;
+		background-position: center;
+		background-size: cover;
+	}
+
+	main div video {
+		width: 80%;
+	}
+
+@media (max-width: 1000px) {
+	body {
+		height: 100%;
+		flex-flow: column nowrap;
+	}
+
+	section, main {
+		width: 98%;
+	}
+
+	section:nth-child(1) {
+		width: 98%;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 17px;
+	}
+
+	p {
+		width: 100%;
+	}
+}
